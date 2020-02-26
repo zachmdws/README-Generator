@@ -77,7 +77,7 @@ inquirer.prompt([
 
                     + "# Table of Contents" + "\n" + "\n" + "\n" + "\n" + "[" + JSON.stringify(answers.table).replace(/['"]+/g, '') + "]" 
 
-                    +"\n" + "\n" +  JSON.stringify(answers.table2).replace(/['"]+/g, '')
+                    + "(#" + JSON.stringify(answers.table).replace(/['"]+/g, '') + ")"  +"\n" + "\n" +  JSON.stringify(answers.table2).replace(/['"]+/g, '')
 
                      + "\n" + "\n" + "# Installation" + "\n" + "\n" + JSON.stringify(answers.installation).replace(/['"]+/g, '') + "\n" + "\n" 
 
