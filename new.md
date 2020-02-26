@@ -1,12 +1,12 @@
 ![GitHub followers](https://img.shields.io/github/followers/zachmdws?style=social)
 
-My email:zatchmdws@gmail.com
+My email: zatchmdws@gmail.com
 
 ![Alternative text](https://avatars1.githubusercontent.com/u/59651796?v=4)
 
-# Big Mac
+# Demo Project
 
-Desc
+Brief description of my project.
 
 
 
@@ -14,19 +14,19 @@ Desc
 
 
 
-[Hard Parts](#Hard Parts)
+- [Item 1 ](#Item 1 )
 
-[Easy Parts](#Hard Parts)
+- [Item 2 ](#Item 1 )
 
 # Installation
 
-Just install it
+Install it via Github!
 
 
 
 # Usage
 
-For the good of mankind.
+For educational purposes.
 
 
 
@@ -38,52 +38,8 @@ For the good of mankind.
 
 # License
 
+Anyone may use this
 
+## Item 1 
 
-## Hard Parts
-
-## Easy Parts![GitHub followers](https://img.shields.io/github/followers/zachmdws?style=social)
-
-My email:zatchmdws@gmail.com
-
-![Alternative text](https://avatars1.githubusercontent.com/u/59651796?v=4)
-
-# Big Mac
-
-Desc
-
-
-
-# Table of Contents
-
-
-
-- [contents ](#contents )
-
-- [content 2](#contents )
-
-# Installation
-
-asd
-
-
-
-# Usage
-
-asd
-
-
-
-# Credits
-
-asd
-
-
-
-# License
-
-
-
-## contents 
-
-## content 2
+## Item 2 

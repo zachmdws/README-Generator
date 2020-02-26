@@ -1,6 +1,5 @@
 var fs = require("fs");
 var inquirer = require("inquirer");
-var github = require('octonode');
 const axios = require("axios");
 
 
@@ -69,7 +68,7 @@ inquirer.prompt([
                     fs.appendFile('new.md', '![GitHub followers](https://img.shields.io/github/followers/'
                     + JSON.stringify(answers.username).replace(/['"]+/g, '') +'?style=social)' + "\n" + "\n"
 
-                    + 'My email:' + email + "\n" + "\n" + '![Alternative text](' + avatarURL + ")" 
+                    + 'My email: ' + email + "\n" + "\n" + '![Alternative text](' + avatarURL + ")" 
 
                     + "\n" + "\n" + "# " + JSON.stringify(answers.title).replace(/['"]+/g, '') + "\n" + "\n" 
 
