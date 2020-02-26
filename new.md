@@ -1,12 +1,12 @@
 ![GitHub followers](https://img.shields.io/github/followers/zachmdws?style=social)
 
-My email:zatchmdws
+My email:zatchmdws@gmail.com
 
 ![Alternative text](https://avatars1.githubusercontent.com/u/59651796?v=4)
 
-# Big Mac Goes to Hollywood
+# Readme Generator
 
-Descr
+desc
 
 
 
@@ -14,15 +14,15 @@ Descr
 
 
 
-[Testing] (#Testing)
+NaNtest)
 
-##Testing
+##test
 
-testing
+test
 
 # Installation
 
-asd
+sdasd
 
 
 
