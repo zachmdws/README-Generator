@@ -4,9 +4,9 @@ My email:zatchmdws@gmail.com
 
 ![Alternative text](https://avatars1.githubusercontent.com/u/59651796?v=4)
 
-# Test Title
+# Big Mac
 
-no
+Desc
 
 
 
@@ -14,25 +14,25 @@ no
 
 
 
-[test]
+[Hard Parts](#Hard Parts)
 
-test
+[Easy Parts](#Hard Parts)
 
 # Installation
 
-asd
+Just install it
 
 
 
 # Usage
 
-asd
+For the good of mankind.
 
 
 
 # Credits
 
-asd
+
 
 
 
@@ -40,4 +40,6 @@ asd
 
 
 
-## test
+## Hard Parts
+
+## Easy Parts

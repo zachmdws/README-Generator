@@ -77,9 +77,9 @@ inquirer.prompt([
 
                     + "# Table of Contents" + "\n" + "\n" + "\n" + "\n" + "[" + JSON.stringify(answers.table).replace(/['"]+/g, '') + "]" 
 
-                    + "(#" + JSON.stringify(answers.table).replace(/['"]+/g, '') + ")"  +"\n" + "\n" +  JSON.stringify(answers.table2).replace(/['"]+/g, '')
+                    + "(#" + JSON.stringify(answers.table).replace(/['"]+/g, '') + ")"  +"\n" + "\n" + "[" + JSON.stringify(answers.table2).replace(/['"]+/g, '')
 
-                     + "\n" + "\n" + "# Installation" + "\n" + "\n" + JSON.stringify(answers.installation).replace(/['"]+/g, '') + "\n" + "\n" 
+                     + "]" + "(#" + JSON.stringify(answers.table).replace(/['"]+/g, '') + ")" + "\n" + "\n" + "# Installation" + "\n" + "\n" + JSON.stringify(answers.installation).replace(/['"]+/g, '') + "\n" + "\n" 
 
                     + "\n" + "\n" + "# Usage" + "\n" + "\n" + JSON.stringify(answers.usage).replace(/['"]+/g, '') + "\n" + "\n" 
 
@@ -87,7 +87,7 @@ inquirer.prompt([
 
                     + "\n" + "\n" + "# License" + "\n" + "\n" + JSON.stringify(answers.license).replace(/['"]+/g, '') + "\n" + "\n" 
                     
-                    + "## " + JSON.stringify(answers.table).replace(/['"]+/g, '')
+                    + "## " + JSON.stringify(answers.table).replace(/['"]+/g, '') + "\n" + "\n"+ "## " + JSON.stringify(answers.table2).replace(/['"]+/g, '') 
 
                      , function(err) { 
                         if(err) { 
