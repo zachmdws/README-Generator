@@ -78,7 +78,7 @@ inquirer.prompt([
 
                     + "(#" + JSON.stringify(answers.table).replace(/['"]+/g, '') + ")"  +"\n" + "\n" + "- [" + JSON.stringify(answers.table2).replace(/['"]+/g, '')
 
-                     + "]" + "(#" + JSON.stringify(answers.table2).replace(/['"]+/g, '') + ")" + "\n" + "\n" + "# Installation" + "\n" + "\n" + JSON.stringify(answers.installation).replace(/['"]+/g, '') + "\n" + "\n" 
+                    + "]" + "(#" + JSON.stringify(answers.table2).replace(/['"]+/g, '') + ")" + "\n" + "\n" + "# Installation" + "\n" + "\n" + JSON.stringify(answers.installation).replace(/['"]+/g, '') + "\n" + "\n" 
 
                     + "\n" + "\n" + "# Usage" + "\n" + "\n" + JSON.stringify(answers.usage).replace(/['"]+/g, '') + "\n" + "\n" 
 

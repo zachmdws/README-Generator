@@ -6,7 +6,7 @@ My email: zatchmdws@gmail.com
 
 # Readme Generator
 
-A simple generator that creates a readme based on questions given to the user.
+Produces a Readme file based on user response.
 
 
 
@@ -14,13 +14,13 @@ A simple generator that creates a readme based on questions given to the user.
 
 
 
-- [Hard Part](#Hard Part)
+- [Item](#Item)
 
-- [Easy Part](#Easy Part)
+- [Other](#Other)
 
 # Installation
 
-Simply take the code from Github!
+Simply take the code from Github
 
 
 
@@ -38,8 +38,8 @@ For coding purposes
 
 # License
 
-Anyone may use this code
+Anyone may use this 
 
-## Hard Part
+## Item
 
-## Easy Part
+## Other
