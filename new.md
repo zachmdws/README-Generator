@@ -4,9 +4,9 @@ My email: zatchmdws@gmail.com
 
 ![Alternative text](https://avatars1.githubusercontent.com/u/59651796?v=4)
 
-# Demo Project
+# Readme Generator
 
-Brief description of my project.
+A simple generator that creates a readme based on questions given to the user.
 
 
 
@@ -14,19 +14,19 @@ Brief description of my project.
 
 
 
-- [Item 1 ](#Item 1 )
+- [Hard Part](#Hard Part)
 
-- [Item 2 ](#Item 1 )
+- [Easy Part](#Easy Part)
 
 # Installation
 
-Install it via Github!
+Simply take the code from Github!
 
 
 
 # Usage
 
-For educational purposes.
+For coding purposes
 
 
 
@@ -38,8 +38,8 @@ For educational purposes.
 
 # License
 
-Anyone may use this
+Anyone may use this code
 
-## Item 1 
+## Hard Part
 
-## Item 2 
+## Easy Part
