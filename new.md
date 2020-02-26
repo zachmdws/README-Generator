@@ -6,7 +6,7 @@ My email:zatchmdws@gmail.com
 
 # Readme Generator
 
-A simple readme generator that produces a structured readme.
+Makes a readme 
 
 
 
@@ -14,29 +14,29 @@ A simple readme generator that produces a structured readme.
 
 
 
--Easy Parts
+-[Testing this ] (#Testing this )
 
--Hard Parts
+-Not this 
 
 # Installation
 
-Just download it!
+as
 
 
 
 # Usage
 
-For educational purposes.
+asd
 
 
 
 # Credits
 
-Max
+
 
 
 
 # License
 
-Any and all can use this.
+
 
