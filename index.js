@@ -39,7 +39,7 @@ inquirer.prompt([
     },
     {
         type: "input",
-        message: "What are the steps necessary to install this project?",
+        message: "Give an explanation as to how to install this project",
         name: "installation"
     },
     {
@@ -68,11 +68,15 @@ inquirer.prompt([
                     
                     fs.appendFile('new.md', '![GitHub followers](https://img.shields.io/github/followers/'
                     + JSON.stringify(answers.username).replace(/['"]+/g, '') +'?style=social)' + "\n" + "\n"
-                    + 'My email:' + email + ' ' + ' ' + '![Alternative text](' + avatarURL + ")" 
+                    + 'My email:' + email + "\n" + "\n" + '![Alternative text](' + avatarURL + ")" 
                     + "\n" + "\n" + "# " + JSON.stringify(answers.title).replace(/['"]+/g, '') + "\n" + "\n" 
                     + JSON.stringify(answers.description).replace(/['"]+/g, '') + "\n" + "\n"
-                    + "- ["+ JSON.stringify(answers.table).replace(/['"]+/g, '')+"]" + "\n" + "\n"
-                    + "- ["+ JSON.stringify(answers.table2).replace(/['"]+/g, '')+"]" + "\n" + "\n"
+                    + "# Table of Contents" + "\n" + "\n" + "-"+ JSON.stringify(answers.table).replace(/['"]+/g, '') 
+                    + "\n" + "\n" + "-"+ JSON.stringify(answers.table2).replace(/['"]+/g, '') + "\n" + "\n"
+                    + "# Installation" + "\n" + "\n" + JSON.stringify(answers.installation).replace(/['"]+/g, '') 
+                    + "\n" + "\n" + "# Usage" + "\n" + "\n" + JSON.stringify(answers.usage).replace(/['"]+/g, '') 
+                    + "\n" + "\n" + "# Credits" + "\n" + "\n" + JSON.stringify(answers.credits).replace(/['"]+/g, '')
+                    + "\n" + "\n" + "# License" + "\n" + "\n" + JSON.stringify(answers.license).replace(/['"]+/g, '')
                      , function(err) { 
                         if(err) { 
                             throw err;
