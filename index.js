@@ -55,6 +55,11 @@ inquirer.prompt([
         type: "input",
         message: "How and to what extent are other developers allowed to use your work?",
         name: "license"
+    },
+    {
+        type: "input",
+        message: "Finally, what would you like to name this read me?",
+        name: "filename"
     }
 ])
 .then(function(answers){ 
@@ -64,29 +69,40 @@ inquirer.prompt([
                 axios.get(queryURL).then(function(res){ 
                     const avatarURL = (res.data.avatar_url);
                     const email = (answers.email);
+                    const username = JSON.stringify(answers.username).replace(/['"]+/g, '');
+                    const title = JSON.stringify(answers.title).replace(/['"]+/g, '');
+                    const description = JSON.stringify(answers.description).replace(/['"]+/g, '');
+                    const tableItem = JSON.stringify(answers.table).replace(/['"]+/g, '');
+                    const tableItem2 = JSON.stringify(answers.table2).replace(/['"]+/g, '');
+                    const installation = JSON.stringify(answers.installation).replace(/['"]+/g, '');
+                    const usage = JSON.stringify(answers.usage).replace(/['"]+/g, '');
+                    const credits = JSON.stringify(answers.credits).replace(/['"]+/g, '');
+                    const license = JSON.stringify(answers.license).replace(/['"]+/g, '');
+
+
+
                     
-                    fs.appendFile('new.md', '![GitHub followers](https://img.shields.io/github/followers/'
-                    + JSON.stringify(answers.username).replace(/['"]+/g, '') +'?style=social)' + "\n" + "\n"
+                    fs.appendFile((answers.filename)+".md", '![GitHub followers](https://img.shields.io/github/followers/'+ username +'?style=social)' + "\n" + "\n"
 
                     + 'My email: ' + email + "\n" + "\n" + '![Alternative text](' + avatarURL + ")" 
 
-                    + "\n" + "\n" + "# " + JSON.stringify(answers.title).replace(/['"]+/g, '') + "\n" + "\n" 
+                    + "\n" + "\n" + "# " + title + "\n" + "\n" 
 
-                    + JSON.stringify(answers.description).replace(/['"]+/g, '') + "\n" + "\n" + "\n" + "\n"
+                    + description + "\n" + "\n" + "\n" + "\n"
 
-                    + "# Table of Contents" + "\n" + "\n" + "\n" + "\n" + "- [" + JSON.stringify(answers.table).replace(/['"]+/g, '') + "]" 
+                    + "# Table of Contents" + "\n" + "\n" + "\n" + "\n" + "- [" + tableItem + "]" 
 
-                    + "(#" + JSON.stringify(answers.table).replace(/['"]+/g, '') + ")"  +"\n" + "\n" + "- [" + JSON.stringify(answers.table2).replace(/['"]+/g, '')
-
-                    + "]" + "(#" + JSON.stringify(answers.table2).replace(/['"]+/g, '') + ")" + "\n" + "\n" + "# Installation" + "\n" + "\n" + JSON.stringify(answers.installation).replace(/['"]+/g, '') + "\n" + "\n" 
-
-                    + "\n" + "\n" + "# Usage" + "\n" + "\n" + JSON.stringify(answers.usage).replace(/['"]+/g, '') + "\n" + "\n" 
-
-                    + "\n" + "\n" + "# Credits" + "\n" + "\n" + JSON.stringify(answers.credits).replace(/['"]+/g, '') + "\n" + "\n" 
-
-                    + "\n" + "\n" + "# License" + "\n" + "\n" + JSON.stringify(answers.license).replace(/['"]+/g, '') + "\n" + "\n" 
+                    + "(#" + tableItem + ")"  +"\n" + "\n" + "- [" + tableItem2 + "]" + "(#" + tableItem2 + ")" 
                     
-                    + "## " + JSON.stringify(answers.table).replace(/['"]+/g, '') + "\n" + "\n"+ "## " + JSON.stringify(answers.table2).replace(/['"]+/g, '') 
+                    + "\n" + "\n" + "# Installation" + "\n" + "\n" + installation
+                    
+                    + "\n" + "\n" + "\n" + "\n" + "# Usage" + "\n" + "\n" + usage 
+                    
+                    + "\n" + "\n"  + "\n" + "\n" + "# Credits" + "\n" + "\n" + credits + "\n" + "\n" 
+
+                    + "\n" + "\n" + "# License" + "\n" + "\n" + license + "\n" + "\n" 
+                    
+                    + "## " + tableItem + "\n" + "\n"+ "## " + tableItem2 
 
                      , function(err) { 
                         if(err) { 
