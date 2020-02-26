@@ -4,9 +4,9 @@ My email:zatchmdws@gmail.com
 
 ![Alternative text](https://avatars1.githubusercontent.com/u/59651796?v=4)
 
-# Readme Generator
+# Big Mac Goes to Hollywood
 
-Makes a readme 
+No
 
 
 
@@ -14,19 +14,19 @@ Makes a readme
 
 
 
--[Testing this ] (#Testing this )
+-[Testing] (#Testing)
 
--Not this 
+-asd
 
 # Installation
 
-as
+
 
 
 
 # Usage
 
-asd
+
 
 
 
