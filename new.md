@@ -4,11 +4,15 @@ My email:zatchmdws@gmail.com
 
 ![Alternative text](https://avatars1.githubusercontent.com/u/59651796?v=4)
 
-# ReadME Generator
+# Readme Generator
 
-Create a readme via nodejs 
+A simple readme generator that produces a structured readme.
+
+
 
 # Table of Contents
+
+
 
 -Easy Parts
 
@@ -18,14 +22,21 @@ Create a readme via nodejs
 
 Just download it!
 
+
+
 # Usage
 
-Use it to create a simple readme by answering questions.
+For educational purposes.
+
+
 
 # Credits
 
-Max 
+Max
+
+
 
 # License
 
-Free to use
+Any and all can use this.
+

@@ -70,13 +70,13 @@ inquirer.prompt([
                     + JSON.stringify(answers.username).replace(/['"]+/g, '') +'?style=social)' + "\n" + "\n"
                     + 'My email:' + email + "\n" + "\n" + '![Alternative text](' + avatarURL + ")" 
                     + "\n" + "\n" + "# " + JSON.stringify(answers.title).replace(/['"]+/g, '') + "\n" + "\n" 
-                    + JSON.stringify(answers.description).replace(/['"]+/g, '') + "\n" + "\n"
-                    + "# Table of Contents" + "\n" + "\n" + "-"+ JSON.stringify(answers.table).replace(/['"]+/g, '') 
+                    + JSON.stringify(answers.description).replace(/['"]+/g, '') + "\n" + "\n" + "\n" + "\n"
+                    + "# Table of Contents" + "\n" + "\n" + "\n" + "\n" + "-"+ JSON.stringify(answers.table).replace(/['"]+/g, '') 
                     + "\n" + "\n" + "-"+ JSON.stringify(answers.table2).replace(/['"]+/g, '') + "\n" + "\n"
-                    + "# Installation" + "\n" + "\n" + JSON.stringify(answers.installation).replace(/['"]+/g, '') 
-                    + "\n" + "\n" + "# Usage" + "\n" + "\n" + JSON.stringify(answers.usage).replace(/['"]+/g, '') 
-                    + "\n" + "\n" + "# Credits" + "\n" + "\n" + JSON.stringify(answers.credits).replace(/['"]+/g, '')
-                    + "\n" + "\n" + "# License" + "\n" + "\n" + JSON.stringify(answers.license).replace(/['"]+/g, '')
+                    + "# Installation" + "\n" + "\n" + JSON.stringify(answers.installation).replace(/['"]+/g, '') + "\n" + "\n" 
+                    + "\n" + "\n" + "# Usage" + "\n" + "\n" + JSON.stringify(answers.usage).replace(/['"]+/g, '') + "\n" + "\n" 
+                    + "\n" + "\n" + "# Credits" + "\n" + "\n" + JSON.stringify(answers.credits).replace(/['"]+/g, '') + "\n" + "\n" 
+                    + "\n" + "\n" + "# License" + "\n" + "\n" + JSON.stringify(answers.license).replace(/['"]+/g, '') + "\n" + "\n" 
                      , function(err) { 
                         if(err) { 
                             throw err;
@@ -86,29 +86,3 @@ inquirer.prompt([
                 
 })})    
 
-
-
-
-
-// ![GitHub followers](https://img.shields.io/github/followers/zachmdws?style=social)
-    
-
-            // fs.appendFile("new.md", "# H1" + JSON.stringify(answers.title)
-            // + "\n" + "\n" + JSON.stringify(answers.description)
-            // + "\n" + "\n" + JSON.stringify(answers.installation)
-            // + "\n" + "\n" + JSON.stringify(answers.usage)
-            // + "\n" + "\n" + JSON.stringify(answers.credits)
-            // + "\n" + "\n" + JSON.stringify(answers.license), function (err) {
-            //     if (err) {
-            //         return console.log(err);
-            //     }
-
-
-
-            // .then(function({ username }){ 
-            //     const queryURL = `https://api.github.com/users/${username}`
-                
-            //     axios.get(queryURL).then(function(res){ 
-            //         const avatarURL = (res.data.avatar_url);
-            //         const email = (res.data.email);
-            //     });
