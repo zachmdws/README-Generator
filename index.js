@@ -71,8 +71,9 @@ inquirer.prompt([
                     + 'My email:' + email + "\n" + "\n" + '![Alternative text](' + avatarURL + ")" 
                     + "\n" + "\n" + "# " + JSON.stringify(answers.title).replace(/['"]+/g, '') + "\n" + "\n" 
                     + JSON.stringify(answers.description).replace(/['"]+/g, '') + "\n" + "\n" + "\n" + "\n"
-                    + "# Table of Contents" + "\n" + "\n" + "\n" + "\n" + "-["+ JSON.stringify(answers.table).replace(/['"]+/g, '') 
-                    + "] (#" + JSON.stringify(answers.table).replace(/['"]+/g, '') + ")" +  "\n" + "\n" + "-"+ JSON.stringify(answers.table2).replace(/['"]+/g, '')
+                    + "# Table of Contents" + "\n" + "\n" + "\n" + "\n" + "["+ JSON.stringify(answers.table).replace(/['"]+/g, '') 
+                    + "] (#" + JSON.stringify(answers.table).replace(/['"]+/g, '') + ")" +  "\n" + "\n" + "##" + JSON.stringify(answers.table).replace(/['"]+/g, '') 
+                    +"\n" + "\n" +  JSON.stringify(answers.table2).replace(/['"]+/g, '')
                      + "\n" + "\n" + "# Installation" + "\n" + "\n" + JSON.stringify(answers.installation).replace(/['"]+/g, '') + "\n" + "\n" 
                     + "\n" + "\n" + "# Usage" + "\n" + "\n" + JSON.stringify(answers.usage).replace(/['"]+/g, '') + "\n" + "\n" 
                     + "\n" + "\n" + "# Credits" + "\n" + "\n" + JSON.stringify(answers.credits).replace(/['"]+/g, '') + "\n" + "\n" 
