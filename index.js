@@ -66,11 +66,14 @@ inquirer.prompt([
                     const avatarURL = (res.data.avatar_url);
                     const email = (answers.email);
                     
-                    fs.appendFile('new.md', 'My email:' + email + ' ' + '![Alternative text](' + avatarURL + ")" 
-                    + "\n" + "\n" + "# " + JSON.stringify(answers.title) + "\n" + "\n" 
-                    + JSON.stringify(answers.description) + "\n" + "\n"
-                    + "- ["+ JSON.stringify(answers.table)+"]" + "\n" + "\n"
-                    + "- ["+ JSON.stringify(answers.table2)+"]" + "\n" + "\n" , function(err) { 
+                    fs.appendFile('new.md', '![GitHub followers](https://img.shields.io/github/followers/'
+                    + JSON.stringify(answers.username).replace(/['"]+/g, '') +'?style=social)' + "\n" + "\n"
+                    + 'My email:' + email + ' ' + ' ' + '![Alternative text](' + avatarURL + ")" 
+                    + "\n" + "\n" + "# " + JSON.stringify(answers.title).replace(/['"]+/g, '') + "\n" + "\n" 
+                    + JSON.stringify(answers.description).replace(/['"]+/g, '') + "\n" + "\n"
+                    + "- ["+ JSON.stringify(answers.table).replace(/['"]+/g, '')+"]" + "\n" + "\n"
+                    + "- ["+ JSON.stringify(answers.table2).replace(/['"]+/g, '')+"]" + "\n" + "\n"
+                     , function(err) { 
                         if(err) { 
                             throw err;
                         }
@@ -83,7 +86,7 @@ inquirer.prompt([
 
 
 
-
+// ![GitHub followers](https://img.shields.io/github/followers/zachmdws?style=social)
     
 
             // fs.appendFile("new.md", "# H1" + JSON.stringify(answers.title)
