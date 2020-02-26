@@ -1,9 +1,3 @@
 # README-Generator
 
-- [Heading](#heading)
-
-
-
-## Heading
-
-This is an h1 heading
+A simple generator that creates a README based on answers given by the user. 
